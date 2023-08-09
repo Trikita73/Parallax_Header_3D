@@ -32,7 +32,7 @@ body {
     height: var(--logo-size);
     background-repeat: no-repeat;
     position: absolute;
-    left: calc(50% - calc(var(--logo-size) / 2));
+    left: calc(51% - calc(var(--logo-size) / 2));
     top: calc(var(--index) * 2.8);
     z-index: 1;
 }
@@ -93,7 +93,7 @@ body {
     text-transform: uppercase;
     letter-spacing: calc(var(--index) * -.15);
     line-height: 1.35em;
-    margin-top: calc(var(--index) * 5.5);
+    margin-top: calc(var(--index) * 15.5);
 }
 
 .hero-content span {
@@ -121,4 +121,9 @@ body {
     border: rgb(255 255 255 / .4) 3px solid;
     outline: none;
     cursor: pointer;
+    margin-top: calc(var(--index) * 2.5);
+}
+
+.layer-4, .layer-5, .layer-6 {
+    pointer-events: none; /* для взаимодействия с кнопкой через верхние слои*/
 }
